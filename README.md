@@ -26,7 +26,10 @@ npm i discord.js - установка библиотеки discord.js.
 Если очень слабый компьюер можете поставить [notepad++](https://notepad-plus-plus.org/downloads/), но это для постоянной основы не самый хороший вариант.
 Лично я использую Atom.
 
-
+#### Код.
+Создадим первый код. Пишем : 
 ```javascript
-function test(){}
+const Discord = require("discord.js");
+const client = new Discord.Client();
+client.login("token");
 ```

@@ -21,8 +21,8 @@ npm i discord.js - установка библиотеки discord.js.
 
 #### Редакторы кода.
 Далее рекомендую установить один из следующих редакторов кода :
-[Atom](https://atom.io/).
-[VScode](https://code.visualstudio.com/).
+## [Atom](https://atom.io/).
+## [VScode](https://code.visualstudio.com/).
 Если очень слабый компьюер можете поставить [notepad++](https://notepad-plus-plus.org/downloads/), но это для постоянной основы не самый хороший вариант.
 Лично я использую Atom.
 

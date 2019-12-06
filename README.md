@@ -26,6 +26,10 @@ npm i discord.js - установка библиотеки discord.js.
 Если очень слабый компьюер можете поставить [notepad++](https://notepad-plus-plus.org/downloads/), но это для постоянной основы не самый хороший вариант.
 Лично я использую Atom.
 
+#### Аккаунт бота.
+Вы можете зарегистрировать его на сайте [discord developers](https://discordapp.com/developers/).
+Жмём кнопку "New Application". Вводим название бота. Жмём окей.
+
 #### Код.
 Создадим первый код. Пишем : 
 ```javascript

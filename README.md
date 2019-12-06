@@ -57,3 +57,10 @@ client.on("message", message => { //Пришло сообщение.
 console.log(message.content); //console.log логирует в консоль, message - объект сообщения, message.content - строка объекта с текстом сообщения.
 })
 ```
+##### Получение информации о авторе сообщения (отправителе).
+Давайте залогируем тег автора.
+```javascript
+client.on("message", message => { //Пришло сообщение.
+console.log(message.author.tag); //message.author.tag содержит в себе тег автора.
+})
+```

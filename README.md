@@ -39,3 +39,4 @@ const Discord = require("discord.js"); //Подключаем discord.js для 
 const client = new Discord.Client(); 
 client.login("token"); //Где token пишем токен бота.
 ```
+После строк кода // обозначает комментарий. Текст после //Никак не влияет на код. Это пояснения для вас.

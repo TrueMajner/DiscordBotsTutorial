@@ -28,7 +28,8 @@ npm i discord.js - установка библиотеки discord.js.
 
 #### Аккаунт бота.
 Вы можете зарегистрировать его на сайте [discord developers](https://discordapp.com/developers/).
-Жмём кнопку "New Application". Вводим название бота. Жмём окей.
+Жмём кнопку "New Application". Вводим название бота. Жмём "Create".
+Переходим во вкладку "Bot", нажимаем "Add Bot", затем "Yes, do it!"
 
 #### Код.
 Создадим первый код. Пишем : 

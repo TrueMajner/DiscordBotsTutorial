@@ -37,5 +37,5 @@ npm i discord.js - установка библиотеки discord.js.
 ```javascript
 const Discord = require("discord.js");
 const client = new Discord.Client();
-client.login("token");
+client.login("token"); //Где token пишем токен бота.
 ```

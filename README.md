@@ -71,7 +71,7 @@ prefix : "!" //Префикс бота.
 }
 ```
 И написать в код бота : 
-```js
+```javascript
 const config = require("./config.json")
 ```
 Второй вариант лучше, но тут выбирайте сами. Кому как удобнее.
@@ -92,22 +92,30 @@ console.log(message.author.tag); //message.author.tag содержит в себ
 })
 ```
 ##### Команда !ping
-Давайте в ответ на сообщение !ping отправлять такое сообщение : "@user, мой пинг равен " далее пинг.
+Давайте в ответ на сообщение !ping отправлять такое сообщение : "@user, мой пинг равен " далее пинг. 
 ```javascript
 client.on("message", message => { //Пришло сообщение.
-if(message.content==config.prefix + "ping") //Если текст сообщения равен префиксу плюс ping, то происходит код в {}
+if(message.content.toLowerCase()==config.prefix + "ping") //Если текст сообщения равен префиксу плюс ping, то происходит код в {} Часть кода .toLowerCase() превращает текст в строчный. (Делает из заглавных букв обычные.) 
 {
 message.reply("мой пинг равен " + client.ping) //message.reply отвечает на сообщение.
 //Также можно использовать message.channel.send(message.author + ", мой пинг равен " + client.ping);
 }
 })
 ```
+Также можно писать не ```javascript
+if(message.content.toLowerCase()==config.prefix + "ping")```
+А 
+```javascript
+if(message.content.toLowerCase().startsWith(config.prefix + "ping"))```
+```
+.startsWith проверят начинается ли строка с символов в скобках.
+
 ##### Об отправке сообщений.
 Теперь рассмотрим message.channel.send();
 Когда я только начинал программировать я не понимал смысл этой фразы, но сейчас понимаю и могу рассказать вам. message - объект сообщения, в нём есть channel - канал в который было отправлено, то есть с помощью message.channel мы получаем канал, а .send() отправляет туда сообщение.
 ```javascript
 client.on("message", message => { //Пришло сообщение.
-if(message.content==config.prefix + "test")
+if(message.content.toLowerCase()==config.prefix + "test")
 {
 message.channel.send("I am working now!");
 }

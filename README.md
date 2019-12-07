@@ -107,6 +107,9 @@ client.channels.get('ID канала').send("Hi!");
 client.channels - все каналы которые есть на серверах с ботом.  
 .get('ID') получает канал из них по ID.  
 .send("Text"); Отправляет сообщение.  
-Id канала можно получить используя [devepoer mode](https://discordia.me/en/developer-mode)  
+ID канала можно получить используя [devepoer mode](https://discordia.me/en/developer-mode)  
 
+##### Eval.
+Также даже начинающим программистам будет очень полезна в боте команда !eval для выполнения кода не пиша его в коде бота, т.е. вы пишите !eval message.channel.send("test"); и бот выполняет этот код.  
+Я нашёл хороший [туториал](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md) по этой команде на github. Рекомендую ознакомиться и взять себе команду в код бота. Принцип её работы мы разберём позже. [Тык](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md).
 #### В разработке..

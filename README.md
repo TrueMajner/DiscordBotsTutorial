@@ -104,9 +104,9 @@ message.channel.send("I am working now!");
 //some code...
 client.channels.get('ID канала').send("Hi!");
 ```
-client.channels - все каналы которые есть на серверах с ботом._
-.get('ID') получает канал из них по ID._
-.send("Text"); Отправляет сообщение._
-Id канала можно получить используя [devepoer mode](https://discordia.me/en/developer-mode)
+client.channels - все каналы которые есть на серверах с ботом.  
+.get('ID') получает канал из них по ID.  
+.send("Text"); Отправляет сообщение.  
+Id канала можно получить используя [devepoer mode](https://discordia.me/en/developer-mode)  
 
 #### В разработке..

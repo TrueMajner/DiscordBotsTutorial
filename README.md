@@ -112,4 +112,6 @@ ID канала можно получить используя [devepoer mode](h
 ##### Eval.
 Также даже начинающим программистам будет очень полезна в боте команда !eval для выполнения кода не пиша его в коде бота, т.е. вы пишите !eval message.channel.send("test"); и бот выполняет этот код.  
 Я нашёл хороший [туториал](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md) по этой команде на github. Рекомендую ознакомиться и взять себе команду в код бота. Принцип её работы мы разберём позже. [Тык](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md).
+##### Мой дискорд сервер!
+Прошу зайти на мой дискорд сервер, ведь я долго делал туториал, а вам не сложно зайи на мой сервер в виде благодарности. https://discord.gg/38Tdu7N
 #### В разработке..

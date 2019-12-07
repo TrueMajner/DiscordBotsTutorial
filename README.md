@@ -106,7 +106,7 @@ message.reply("мой пинг равен " + client.ping) //message.reply от�
 if(message.content.toLowerCase()==config.prefix + "ping")```
 А 
 ```javascript
-if(message.content.toLowerCase().startsWith(config.prefix + "ping"))```
+if(message.content.toLowerCase().startsWith(config.prefix + "ping"))
 ```
 .startsWith проверят начинается ли строка с символов в скобках.
 

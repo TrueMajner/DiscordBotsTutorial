@@ -102,8 +102,10 @@ message.reply("мой пинг равен " + client.ping) //message.reply от�
 }
 })
 ```
-Также можно писать не ```javascript
-if(message.content.toLowerCase()==config.prefix + "ping")```
+Также можно писать не 
+```javascript
+if(message.content.toLowerCase()==config.prefix + "ping")
+```
 А 
 ```javascript
 if(message.content.toLowerCase().startsWith(config.prefix + "ping"))

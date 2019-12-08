@@ -68,7 +68,7 @@ node название-файла-с-кодом.js
 ``` 
 В начале кода бота напишем : 
 ```javascript
-const config = require("./config.json")
+const config = require("./config.json");
 ```
 Еще вы можете создать конфиг прямо в коде бота.
 ```js

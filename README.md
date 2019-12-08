@@ -62,7 +62,7 @@ pause
 "prefix" : "!"
 }
 ``` 
-И написать в начале кода бота : 
+В начале кода бота напишем : 
 ```javascript
 const config = require("./config.json")
 ```

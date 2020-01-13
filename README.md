@@ -140,7 +140,8 @@ ID канала можно получить используя [devepoer mode](h
 Также даже начинающим программистам будет очень полезна в боте команда !eval для выполнения кода не пиша его в коде бота, т.е. вы пишите ``!eval какой-то код`` и бот выполняет этот код.  
 Я нашёл хороший [туториал](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md) по этой команде на github. Рекомендую ознакомиться и взять себе команду в код бота. Принцип её работы мы разберём позже. [Тык](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md). 
  
-##### RichEmbed.
+#### RichEmbed.
+##### Пример. 
 Думаю вы все видели как боты отправляют сообщения такого типа. 
  
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/embed.png) 
@@ -150,6 +151,7 @@ ID канала можно получить используя [devepoer mode](h
  
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/exxample.png) 
  
+##### Команда. 
 Для этого создадим новую команду ``!ping``.
 ```javascript
 client.on("message", message => { //Пришло сообщение.
@@ -163,6 +165,17 @@ message.channel.send(embed); //Отправляем.
 }
 })
 
+```
+##### Параметры.
+В Embed есть много различных параметров, вы можете прочесть их далее, либо посмотреть на оффициальном сайте [discord.js](https://discord.js.org/#/docs/main/stable/class/RichEmbed)
+```javascript
+embed.setColor("Цвет в hex или один из встроенных."); // Устанавливает цвет боковой полосы.
+embed.setDescription("Описание") //Устанавливает описание.
+embed.serFooter("Подпись") //Устанавливает подпись мелким шрифтом под эмбедом.
+embed.setThumbnail("url") //Миниатюра эмбеда.
+embed.setAuthor("Имя", "Url") //Устанавливает автора.
+embed.addField("Заголовок", "Текст") //Добавляет поле.
+embed.setImage("URL") //Добавляет картинку.
 ```
 ##### Мой дискорд сервер!
 Прошу зайти на [мой дискорд сервер](https://discord.gg/38Tdu7N), ведь я долго делал туториал, а вам не сложно зайти на [мой сервер](https://discord.gg/38Tdu7N) в виде благодарности. 

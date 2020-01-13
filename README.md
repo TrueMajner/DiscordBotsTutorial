@@ -151,7 +151,7 @@ ID канала можно получить используя [devepoer mode](h
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/exxample.png) 
  
 Для этого создадим новую команду ``!ping``.
-```
+```javascript
 client.on("message", message => { //Пришло сообщение.
 if(message.content.toLowerCase()==config.prefix + "ping") //Выше было
 {

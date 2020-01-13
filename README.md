@@ -145,7 +145,7 @@ ID канала можно получить используя [devepoer mode](h
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/embed.png) 
 Это называется RichEmbed или же можно говорить просто Embed. 
 Давайте отправим простой эмбед похожий на этот 
-![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/example.png) 
+![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/exxample.png) 
 ##### Мой дискорд сервер!
 Прошу зайти на [мой дискорд сервер](https://discord.gg/38Tdu7N), ведь я долго делал туториал, а вам не сложно зайти на [мой сервер](https://discord.gg/38Tdu7N) в виде благодарности. 
 #### В разработке..

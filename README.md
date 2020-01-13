@@ -141,15 +141,29 @@ ID канала можно получить используя [devepoer mode](h
 Я нашёл хороший [туториал](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md) по этой команде на github. Рекомендую ознакомиться и взять себе команду в код бота. Принцип её работы мы разберём позже. [Тык](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md). 
  
 ##### RichEmbed.
-Думаю вы все видели как боты отправляют сообщения такого типа 
+Думаю вы все видели как боты отправляют сообщения такого типа. 
  
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/embed.png) 
  
 Это называется RichEmbed (Embed). 
-Давайте отправим простой эмбед похожий на данный. 
+Давайте отправим простой эмбед похожий на данный. (Картинка ниже) 
  
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/exxample.png) 
  
+Для этого создадим новую команду ``!ping``.
+```
+client.on("message", message => { //Пришло сообщение.
+if(message.content.toLowerCase()==config.prefix + "ping") //Выше было
+{
+let embed = new Discord.RichEmbed() //Создаём новый эмбед.
+.setTitle('Пинг бота.') //Устанавливаем заголовок.
+.setColor(`GREEN`) //Цвет зелёный. Можно указать hex.
+.setDescription("Пинг : " + client.ping); //Устанавливаем описание.
+message.channel.send(embed); //Отправляем.
+}
+})
+
+```
 ##### Мой дискорд сервер!
 Прошу зайти на [мой дискорд сервер](https://discord.gg/38Tdu7N), ведь я долго делал туториал, а вам не сложно зайти на [мой сервер](https://discord.gg/38Tdu7N) в виде благодарности. 
 #### В разработке..

@@ -138,7 +138,8 @@ ID канала можно получить используя [devepoer mode](h
 
 ##### Eval.
 Также даже начинающим программистам будет очень полезна в боте команда !eval для выполнения кода не пиша его в коде бота, т.е. вы пишите ``!eval какой-то код`` и бот выполняет этот код.  
-Я нашёл хороший [туториал](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md) по этой команде на github. Рекомендую ознакомиться и взять себе команду в код бота. Принцип её работы мы разберём позже. [Тык](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md).
+Я нашёл хороший [туториал](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md) по этой команде на github. Рекомендую ознакомиться и взять себе команду в код бота. Принцип её работы мы разберём позже. [Тык](https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/examples/making-an-eval-command.md). 
+ 
 ##### RichEmbed.
 Думаю вы все видели как боты отправляют сообщения такого типа 
 ##### Мой дискорд сервер!

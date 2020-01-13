@@ -144,8 +144,8 @@ ID канала можно получить используя [devepoer mode](h
 Думаю вы все видели как боты отправляют сообщения такого типа 
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/embed.png) 
  
-Это называется RichEmbed или же можно говорить просто Embed. 
-Давайте отправим простой эмбед похожий на этот 
+Это называется RichEmbed (Embed). 
+Давайте отправим простой эмбед похожий на данный.  
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/exxample.png) 
  
 ##### Мой дискорд сервер!

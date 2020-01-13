@@ -142,6 +142,8 @@ ID канала можно получить используя [devepoer mode](h
  
 ##### RichEmbed.
 Думаю вы все видели как боты отправляют сообщения такого типа 
+![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/image.png)
+ 
 ##### Мой дискорд сервер!
 Прошу зайти на [мой дискорд сервер](https://discord.gg/38Tdu7N), ведь я долго делал туториал, а вам не сложно зайти на [мой сервер](https://discord.gg/38Tdu7N) в виде благодарности. 
 #### В разработке..

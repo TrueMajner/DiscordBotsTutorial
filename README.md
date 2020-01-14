@@ -197,6 +197,31 @@ message.channel.send({embed}); //Отправляем.
 Вышло так 
  
 ![Image alt](https://github.com/TrueMajner/discordbotstut/raw/master/img/avatar.png) 
+
+#### Команда ``!userinfo``.
+Давайте сделаем команду для получения информации о пользователе. Команда взята из моего бота. 
+Будем использовать библиотеку ``moment.js``, устанавливаем ``npm i moment.js`` 
+```javascript
+let mbr = message.mentions.members.first() || message.member; //Если есть упомянание, то mbr = тот кого упомянули, если нету то автору сообщения.
+      if (mbr){ //Если всё ок.
+      let embed = new Discord.RichEmbed() //Создаём эмбед
+      .setAuthor(mbr.user.tag, mbr.user.avatarURL) //Устанавливаем автора
+      .setColor(`GREEN`) //Цвет зелёный
+      .setTitle("Тег") //Устанавливаем заголовок
+      .setDescription(mbr.user.tag) //Описание - тег юзера.
+      .addField("ID",  mbr.user.id) //Первое поле - айди автора.
+      .addField("Никнейм",  mbr.nickname !== null ? mbr.nickname : "No nickname") //Второе поле - никнейм (НЕ ПУТАТЬ С НИКОМ И ТЕГОМ)!
+      .addField("Статус", status[mbr.user.presence.status]) //Статус человека
+      .addField("Играет в ", mbr.user.presence.game ? mbr.user.presence.game.name : "Ничего") //Во что играет
+      .addField("Присоединился", moment(mbr.joinedAt).format('MMMM Do YYYY h:mm:ss')) //Когда зашёл на сервер
+      .addField("Аккаунт создан", mbr.user.createdAt.toLocaleString()) //Когда создан аккаунт
+      .addField("Роли на сервере", mbr.roles.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "No Roles") //Роли человека на сервере
+      .setThumbnail(mbr.user.displayAvatarURL) //Аватар человека
+      .setFooter("Информация о пользователе.") //Футер
+      message.channel.send({embed}); //Отправляем
+}
+else message.reply("Вы забыли упомянуть пользователя."); //Это вряд-ли сможет произойти, но на всякий случай
+```
  
 #### Мой дискорд сервер!
 Прошу зайти на [мой дискорд сервер](https://discord.gg/38Tdu7N), ведь я долго делал туториал, а вам не сложно зайти на [мой сервер](https://discord.gg/38Tdu7N) в виде благодарности. 

@@ -1,4 +1,4 @@
-#:no_entry: [DEPRECATED] 
+#:no_entry: DEPRECATED
 
 # discordbotstut
 Начнём. Ссылка на мой [youtube канал.](https://www.youtube.com/channel/UCHHBv4pqQWIMUuXIirVWmjg?view_as=subscriber) 

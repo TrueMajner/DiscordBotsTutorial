@@ -1,4 +1,12 @@
-# :no_entry: DEPRECATED
+# ⚠️ Deprecated / Archived
+
+> **This repository is no longer maintained.**
+>
+> This project was created in 2019 while I was still in school and is kept here for historical purposes only.  
+> The code and tutorial rely on outdated versions of Discord.js and should not be used as a current reference.
+
+# Discord Bots Tutorial
+...
 
 # discordbotstut
 Начнём. Ссылка на мой [youtube канал.](https://www.youtube.com/channel/UCHHBv4pqQWIMUuXIirVWmjg?view_as=subscriber) 
